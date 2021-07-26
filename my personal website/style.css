@@ -1,0 +1,145 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+body{
+     background: url("images/banner.jpg") no-repeat center;
+     background-size: cover;
+     height: 100%;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+nav{
+    display:flex;
+}
+.my{
+
+width: 100%;
+margin-bottom: 3rem;
+margin-top: 15%;
+margin-left: 10%;
+}
+
+.my h1{
+position: relative;
+margin: 0;
+font-size: 4em;
+font-weight: 900;
+color:green;
+z-index: 1;
+overflow: hidden;
+}
+.wel h1{
+  font-size: 5rem;
+  text-align: center;
+  height: 10vh;
+  line-height: 20vh;
+  font-family: 'Niconne', cursive;
+  font-weight: 700;
+  text-shadow:1px 1px 0px red,
+               2px 2px 0px red,
+               3px 3px 0px red,
+               4px 4px 0px green,
+               5px 5px 0px green,
+                6px 6px 0px green,
+                7px 7px 0px red,
+                8px 8px 0px red,
+                9px 9px 0px red;
+color: rgba(1,0,0,0.93);
+
+}
+
+.my h1:before{
+  content: '';
+  position: absolute;
+  left:110%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(90deg,transparent 0%,#980f03 5%, #000 100%);
+  animation: animate 5.5s infinite;
+}
+@keyframes animate {
+  0%{
+    left: 110%;
+    
+  }
+  50%{
+    width: -100%;
+    transform: translate3d(-30px);
+  }
+  100%{
+    
+    left: -120%;
+  }
+
+ 
+}
+.my h1 span{
+  color: red;
+}
+
+.nav{
+
+ padding:0;
+ margin: 0;
+
+width: 150px;
+height: 100%;
+
+background-color: rgba(1,0,0,0.75);
+ 
+}
+.nav li{
+  padding: 15px;
+}
+.nav li a
+{
+    text-decoration: none;
+    color:lightgreen;
+    display: block;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: arial;
+    border-radius: 6px;
+    border: 1px solid brown;
+
+}
+.nav li a:hover
+{
+  background:#35000000;
+  border: 0;
+  box-shadow: 0 0 3px #ffe205, 0 0 7px #ffe205, 0 0 20px #edd205;
+
+}
+.home h1{
+position: relative;
+margin:150px;
+font-size: 4em;
+font-weight: 900;
+z-index: 1;
+color: green;
+}
+.home h1 span{
+color: red;
+}
+
+.con{
+  display: list-item;
+}
+
+ @media only screen and (max-width:600px){
+body{
+background-size:100% 100%;
+}
+
+.home{
+  height: auto;
+  margin-left: -35px;
+
+ }
+}
